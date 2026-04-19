@@ -3,6 +3,8 @@ import Header from "./Components/Header/Header";
 import OnlineStudying from "./Components/HomeComponents/OnlineStudying/OnlineStudying";
 import Software from "./Components/HomeComponents/Software/Software";
 import WhatIsIt from "./Components/HomeComponents/WhatIsIt/WhatIsIt";
+import Physical from "./Components/HomeComponents/Physical/Physical";
+import Features from "./Components/HomeComponents/Features/Features";
 
 export default function Home() {
   return (
@@ -11,6 +13,8 @@ export default function Home() {
       <OnlineStudying />
       <Software />
       <WhatIsIt />
+      <Physical />
+      <Features />
     </div>
   );
 }
