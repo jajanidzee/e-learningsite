@@ -6,6 +6,7 @@ import WhatIsIt from "./Components/HomeComponents/WhatIsIt/WhatIsIt";
 import Physical from "./Components/HomeComponents/Physical/Physical";
 import Features from "./Components/HomeComponents/Features/Features";
 import Tools from "./Components/HomeComponents/Tools/Tools";
+import Assessments from "./Components/HomeComponents/Assessments/Assessments";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <Physical />
       <Features />
       <Tools />
+      <Assessments />
     </div>
   );
 }
