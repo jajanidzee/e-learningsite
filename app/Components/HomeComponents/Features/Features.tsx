@@ -12,7 +12,7 @@ const Features = () => {
       <h3 className="font-[Poppins] font-bold text-[36px] text-[#2F327D]">
         Our <span className="text-[#00CBB8]">Features</span>
       </h3>
-      <p className="font-[Poppins] font-normal text-[#696984] text-[24px] text-[#696984 mt-[20px]">
+      <p className="font-[Poppins] font-normal text-[#696984] text-[24px] text-[#696984] mt-[20px]">
         This very extraordinary feature, can make learning activities more
         efficient
       </p>

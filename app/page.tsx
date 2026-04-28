@@ -7,6 +7,7 @@ import Physical from "./Components/HomeComponents/Physical/Physical";
 import Features from "./Components/HomeComponents/Features/Features";
 import Tools from "./Components/HomeComponents/Tools/Tools";
 import Assessments from "./Components/HomeComponents/Assessments/Assessments";
+import Management from "./Components/HomeComponents/Management/Management";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
       <Features />
       <Tools />
       <Assessments />
+      <Management />
     </div>
   );
 }

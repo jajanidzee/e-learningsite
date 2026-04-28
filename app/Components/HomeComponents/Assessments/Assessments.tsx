@@ -5,7 +5,7 @@ import CityOnWater from "../../../../public/CityOnWater.png";
 import DeliverImg from "../../../../public/Deliver.png";
 const Assessments = () => {
   return (
-    <div className="pl-[192px] mt-[160px] flex gap-[400px]">
+    <div className="pl-[192px] mt-[204.07px] flex gap-[400px] items-center relative">
       <div className="w-[465.62px] h-[562.39px] rounded-[18.21px] bg-[#FFFFFF] shadow-[0px_10px_10px_10px_#D9D9D9] py-[38.32px] px-[38.32px] relative z-10">
         <button className="w-[174.37px] bg-[#CDD8FF] rounded-[72.82px] py-[6.71px] px-[33.53px] text-[#717FB0] font-[Poppins] font-medium text-[20.03px] border-[1px] border-[#000000]">
           Question 1
@@ -43,7 +43,7 @@ const Assessments = () => {
         <div className="w-[16.29px] h-[16.29px] bg-[#F3538C] absolute rounded-[100%] -right-[56px] top-[314.25px]"></div>
         <div className="w-[16.29px] h-[16.29px] bg-[#34E7A5] absolute rounded-[100%] -bottom-[25.87px] left-[0]"></div>
       </div>
-      <div className="flex items-start gap-[18.2px] absolute z-0 top-[5365px] left-[130px]">
+      <div className="flex items-start gap-[18.2px] absolute z-0 -top-[25px] left-[130px]">
         {" "}
         <div className="w-[99.64px] h-[99.64px] bg-[#687EF3] rounded-[100%]"></div>
         <div className="w-[22.99px] h-[22.99px] bg-[#F3A268] rounded-[100%]"></div>
