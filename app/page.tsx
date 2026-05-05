@@ -8,6 +8,7 @@ import Features from "./Components/HomeComponents/Features/Features";
 import Tools from "./Components/HomeComponents/Tools/Tools";
 import Assessments from "./Components/HomeComponents/Assessments/Assessments";
 import Management from "./Components/HomeComponents/Management/Management";
+import Discussions from "./Components/HomeComponents/Discussions/Discussions";
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
       <Tools />
       <Assessments />
       <Management />
+      <Discussions />
     </div>
   );
 }
