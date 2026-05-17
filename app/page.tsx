@@ -10,6 +10,7 @@ import Assessments from "./Components/HomeComponents/Assessments/Assessments";
 import Management from "./Components/HomeComponents/Management/Management";
 import Discussions from "./Components/HomeComponents/Discussions/Discussions";
 import Testimonial from "./Components/HomeComponents/Testimonial/Testimonial";
+import News from "./Components/HomeComponents/News/News";
 
 export default function Home() {
   return (
@@ -25,6 +26,7 @@ export default function Home() {
       <Management />
       <Discussions />
       <Testimonial />
+      <News />
     </div>
   );
 }

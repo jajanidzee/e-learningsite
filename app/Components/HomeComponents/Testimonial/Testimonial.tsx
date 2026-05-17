@@ -5,7 +5,7 @@ import GloriaGirlImg from "../../../../public/GloriaGirl.png";
 import SstarImg from "../../../../public/SStar.png";
 const Testimonial = () => {
   return (
-    <div className="flex gap-[160px] ml-[200px]">
+    <div className="flex gap-[160px] ml-[200px] mt-[250px]">
       <div>
         <div className="flex gap-[30px] items-center">
           <hr className="w-[80px] bg-[#525596] h-[1px]" />
@@ -32,13 +32,9 @@ const Testimonial = () => {
           <Image src={RightArrowImg} alt="RightArrowImg"></Image>
         </button>
       </div>
-      <div>
-        <Image
-          src={GloriaGirlImg}
-          alt="GloriaGirlImg"
-          className="relative"
-        ></Image>
-        <div className="w-[680px] bg-[#FFFFFF] shadow-[0px_5px_5px_3px_#D9D9D9] h-[329px] pr-[42px] rounded-[20px] pl-[55px] relative pt-[41px]">
+      <div className="relative">
+        <Image src={GloriaGirlImg} alt="GloriaGirlImg" className=""></Image>
+        <div className="w-[680px] bg-[#FFFFFF] shadow-[0px_5px_5px_3px_#D9D9D9] h-[329px] pr-[42px]  rounded-[20px] pl-[55px] absolute left-[70px] -bottom-[120px] pt-[41px]">
           <hr className="h-[329px] w-[14px] bg-[#F67766] absolute left-[0] top-[0] " />
           <div className="flex gap-[32px] ">
             <hr className="h-[139.01px] bg-[#BDBDD1] w-[1px]" />
