@@ -11,6 +11,7 @@ import Management from "./Components/HomeComponents/Management/Management";
 import Discussions from "./Components/HomeComponents/Discussions/Discussions";
 import Testimonial from "./Components/HomeComponents/Testimonial/Testimonial";
 import News from "./Components/HomeComponents/News/News";
+import Footer from "./Components/Footer/Footer";
 
 export default function Home() {
   return (
@@ -27,6 +28,7 @@ export default function Home() {
       <Discussions />
       <Testimonial />
       <News />
+      <Footer />
     </div>
   );
 }

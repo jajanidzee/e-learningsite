@@ -33,7 +33,6 @@ const NewsDivs = ({
         </button>
       </div>
       <div className="text-start">
-        {" "}
         <h3 className="font-[Poppins] font-medium text-[22px] text-[#252641]">
           {h3text}
         </h3>
