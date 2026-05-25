@@ -1,5 +1,6 @@
+"use client";
 import React from "react";
-
+import { motion } from "motion/react";
 const Physical = () => {
   return (
     <div className="px-[186px] mt-[160px] flex gap-[67px]">
@@ -18,7 +19,7 @@ const Physical = () => {
           based system.
         </p>
         <div className="w-[30px] h-[30px] rounded-[100%] bg-[#33EFA0] absolute right-[163px] bottom-[121px] "></div>
-        <p className="underline text-[22px] font-[Poppins] font-normal text-[#696984] mt-[30px]">
+        <p className=" cursor-pointer hover:underline text-[22px] font-[Poppins] font-normal text-[#696984] mt-[30px]">
           Learn more
         </p>
       </div>

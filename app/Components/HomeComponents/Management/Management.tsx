@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import StarImg from "../../../../public/Star.png";
 import Image from "next/image";
@@ -8,6 +9,7 @@ import GradeBook3 from "../../../..//public/GradeBook3.png";
 import GradeBook4 from "../../../..//public/GradeBook4.png";
 import BookImg from "../../../../public/Book.png";
 import WavesImg from "../../../../public/Waves.png";
+import { motion } from "motion/react";
 const Management = () => {
   return (
     <div className="mt-[175.51px] flex relative gap-[250.94px] ml-[150px] items-center ">
@@ -95,9 +97,13 @@ const Management = () => {
             </div>
           </div>
         </div>
-        <button className="absolute right-[39.98px] bottom-[25.95px] w-[169.93px] h-[58.59px] bg-gradient-to-r from-[#545AE7] to-[#393FCF] rounded-[60px] text-[#FFFFFF] shadow-[2px_2px_2px_0px_#545AE8] font-[Poppins] text-[22px] font-medium text-[#FFFFFF] flex items-center justify-center ">
+        <motion.button
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.95 }}
+          className="cursor-pointer absolute right-[39.98px] bottom-[25.95px] w-[169.93px] h-[58.59px] bg-gradient-to-r from-[#545AE7] to-[#393FCF] rounded-[60px] text-[#FFFFFF] shadow-[2px_2px_2px_0px_#545AE8] font-[Poppins] text-[22px] font-medium text-[#FFFFFF] flex items-center justify-center "
+        >
           Export
-        </button>
+        </motion.button>
       </div>
       <div className="w-[288.87px] h-[207.63px] bg-[#D3E7FF] rounded-[20px] absolute z-0 left-[700px] top-[290px]"></div>
     </div>

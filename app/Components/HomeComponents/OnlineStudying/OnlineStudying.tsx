@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import Image from "next/image";
 import PlayImg from "../../../../public/Play.svg";
@@ -6,6 +7,7 @@ import CalendarlImg from "../../../../public/Calendar.png";
 import EllipselImg from "../../../../public/Ellipse.png";
 import VoiceImg from "../../../../public/voice.png";
 import EmailImg from "../../../../public/Email.png";
+import { motion } from "motion/react";
 const OnlineStudying = () => {
   return (
     <div className="bg-[#49BBBD] px-[140px] flex items-center pt-[142px] gap-[74px]">
@@ -19,17 +21,28 @@ const OnlineStudying = () => {
           interactive way
         </p>
         <div className="flex gap-[40px] items-center gap-[40px] mt-[52px]">
-          <button
-            className="  text-[#FFFFFF] bg-[#00CBB8] font-[Poppins] text-[22px] font-semibold
+          <motion.button
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.95 }}
+            onHoverStart={() => console.log("hover started!")}
+            className=" cursor-pointer  text-[#FFFFFF] bg-[#00CBB8] font-[Poppins] text-[22px] font-semibold
             rounded-[80px] w-[180px] h-[60px]"
           >
             Join for free
-          </button>
+          </motion.button>
           <div className="flex items-center gap-8">
-            <div className="w-[80px] h-[80px] flex justify-center items-center bg-[#FFF] rounded-[50%] pl-[5px]">
+            <motion.div
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.95 }}
+              className="w-[80px] h-[80px] cursor-pointer  flex justify-center items-center bg-[#FFF] rounded-[50%] pl-[5px]"
+            >
               {" "}
-              <Image src={PlayImg} alt="PlayImg" className=""></Image>
-            </div>
+              <Image
+                src={PlayImg}
+                alt="PlayImg"
+                className="cursor-pointer"
+              ></Image>
+            </motion.div>
             <p className="text-[#252641] font-[Poppins]  text-[24px] font-normal">
               Watch how it works
             </p>
@@ -67,9 +80,13 @@ const OnlineStudying = () => {
             <p className="font-[Nunito_Sans] text-[20px] font-semibold text-[#545567]">
               Today at 12.00 PM
             </p>
-            <button className="py-[12px] px-[48px] bg-[#D8587E] rounded-[80px] font-[Nunito_Sans] text-[20px] font-bold text-[#FFFFFF] mt-[31px] ">
+            <motion.button
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.95 }}
+              className=" cursor-pointer py-[12px] px-[48px] bg-[#D8587E] rounded-[80px] font-[Nunito_Sans] text-[20px] font-bold text-[#FFFFFF] mt-[31px] "
+            >
               Join Now
-            </button>
+            </motion.button>
           </div>
         </div>
         <Image

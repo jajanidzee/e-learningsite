@@ -1,7 +1,9 @@
+"use client";
 import React from "react";
 import Image from "next/image";
 import HeadPhoneGirlImg from "../../../../public/HeadPhoneGirl.png";
 import RatingImg from "../../../../public/Rating.svg";
+import { motion } from "motion/react";
 const Discussions = () => {
   return (
     <div className="">
@@ -38,9 +40,13 @@ const Discussions = () => {
                     Your video can’t be seen by others
                   </p>
                 </div>
-                <button className="w-[197.72px] h-[54.61px] rounded-[56.49px] bg-gradient-to-r from-[#F55454] to-[#E5422B] font-medium font-[Poppins] text-[20.71px] text-[#fff]  shadow-[2px_2px_2px_0px_#E5422B]">
+                <motion.button
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 0.95 }}
+                  className="cursor-pointer w-[197.72px] h-[54.61px] rounded-[56.49px] bg-gradient-to-r from-[#F55454] to-[#E5422B] font-medium font-[Poppins] text-[20.71px] text-[#fff]  shadow-[2px_2px_2px_0px_#E5422B]"
+                >
                   End Discussion
-                </button>
+                </motion.button>
               </div>
             </div>{" "}
           </div>
@@ -63,9 +69,13 @@ const Discussions = () => {
       </div>
       <div className="mt-[280px] flex justify-center">
         {" "}
-        <button className="w-[280px] h-[80px] border-[1px] border-[#49BBBD] rounded-[80px] font-[Nunito_Sans] text-[24px] font-normal text-[#49BBBD] flex items-center justify-center ">
+        <motion.button
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.95 }}
+          className="cursor-pointer w-[280px] h-[80px] border-[1px] border-[#49BBBD] rounded-[80px] font-[Nunito_Sans] text-[24px] font-normal text-[#49BBBD] flex items-center justify-center "
+        >
           See more features
-        </button>
+        </motion.button>
       </div>
     </div>
   );

@@ -1,5 +1,6 @@
+"use client";
 import React from "react";
-
+import { motion } from "motion/react";
 const WhatIsIt = () => {
   return (
     <div className="text-center mt-[158px]">
@@ -18,17 +19,25 @@ const WhatIsIt = () => {
           <h3 className="font-[Poppins] text-[32px] font-semibold text-[#FFFFFF]">
             FOR INSTRUCTORS
           </h3>
-          <button className="w-[283px] h-[80px] py-[22px] px-[38px] text-[#FFFFFF] text-[22px] font-[Poppins] font-normal rounded-[80px] border-[1px] border-white mt-[17px]">
+          <motion.button
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.95 }}
+            className=" cursor-pointer w-[283px] h-[80px] py-[22px] px-[38px] text-[#FFFFFF] text-[22px] font-[Poppins] font-normal rounded-[80px] border-[1px] border-white mt-[17px]"
+          >
             Start a class today
-          </button>
+          </motion.button>
         </div>
         <div className="bg-[url('/Students.png')] w-[600px] h-[400px] pt-[132px] pb-[123px] px-[146px] ">
           <h2 className="font-[Poppins] text-[32px] font-semibold text-[#FFFFFF]">
             FOR STUDENTS
           </h2>
-          <button className="w-[283px] h-[80px] py-[22px] px-[38px] text-[#FFFFFF] text-[22px] font-[Poppins] font-normal rounded-[80px] bg-[#23bfeed7] mt-[17px]">
+          <motion.button
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.95 }}
+            className=" cursor-pointer w-[283px] h-[80px] py-[22px] px-[38px] text-[#FFFFFF] text-[22px] font-[Poppins] font-normal rounded-[80px] bg-[#23bfeed7] mt-[17px]"
+          >
             Enter access code
-          </button>
+          </motion.button>
         </div>
       </div>
     </div>

@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import Image from "next/image";
 import RatingImg from "../../../../public/Rating.svg";
@@ -6,6 +7,7 @@ import FeatureDiv from "../FeatureDiv/FeatureDiv";
 import WindowsImg from "../../../../public/Windows.png";
 import DoubleBlocksImg from "../../../../public/DoubleBlocks.png";
 import TeamImg from "../../../../public/Team.png";
+import { motion } from "motion/react";
 const Features = () => {
   return (
     <div className="mt-[160px] text-center pl-[170px] relative">
@@ -24,7 +26,11 @@ const Features = () => {
         <div className="w-[30px] h-[30px] rounded-[100%] bg-[#F56666]"></div>
         <div className="w-[264px] h-[264px] rounded-[100%] bg-[#5B61EB]"></div>
       </div>
-      <div className="bg-[#F9F9F9] w-[73px] h-[73px] rounded-[100%] absolute z-22 left-[32%] border-[10px] border-[#e2e2e263] top-[61%] "></div>
+      <motion.div
+        whileHover={{ scale: 1.1 }}
+        whileTap={{ scale: 0.95 }}
+        className="cursor-pointer bg-[#F9F9F9] w-[73px] h-[73px] rounded-[100%] absolute z-22 left-[32%] border-[10px] border-[#e2e2e263] top-[61%] "
+      ></motion.div>
       <div className="flex items-start gap-[240px]">
         <div className="bg-[url('/BlurBg.png')] w-[783px] h-[483px] relative z-20  mt-[176px] ">
           <div className="pt-[92.7px] flex items-start  ">
@@ -42,12 +48,20 @@ const Features = () => {
                 </div>
               </div>{" "}
               <div className="flex  items-center gap-[24.13px] mt-[34.43px] ml-[44.66px]">
-                <button className="shadow-[0px_10px_60px_0px_#C9D3E7] py-[6.73px] px-[37.34px] h-[51.7px] bg-[#545AE8] rounded-[51.07px] font-[Nunito_Sans] font-bold text-[#FFFFFF] text-[22.13px]">
+                <motion.button
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 0.95 }}
+                  className="cursor-pointer shadow-[0px_10px_60px_0px_#C9D3E7] py-[6.73px] px-[37.34px] h-[51.7px] bg-[#545AE8] rounded-[51.07px] font-[Nunito_Sans] font-bold text-[#FFFFFF] text-[22.13px]"
+                >
                   Present
-                </button>
-                <button className="h-[65px] border-[5px] border-[#FFD4E1] py-[17px] pl-[30px] pr-[42px] bg-[#E13468] rounded-[51.07px] flex items-center font-[Nunito_Sans] font-bold text-[#FFFFFF] gap-[9.36px] text-[22.13px] ">
+                </motion.button>
+                <motion.button
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 0.95 }}
+                  className="cursor-pointer h-[65px] border-[5px] border-[#FFD4E1] py-[17px] pl-[30px] pr-[42px] bg-[#E13468] rounded-[51.07px] flex items-center font-[Nunito_Sans] font-bold text-[#FFFFFF] gap-[9.36px] text-[22.13px] "
+                >
                   Call <Image src={PhoneImg} alt="PhoneImg"></Image>
-                </button>
+                </motion.button>
               </div>
             </div>
             <div className="absolute left-[477px] top-[53.02px]">

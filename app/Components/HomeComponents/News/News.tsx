@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import Image from "next/image";
 import VideoCallImg from "../../../../public/VideoCall.png";
@@ -5,6 +6,7 @@ import NewsDivs from "../../NewsDivs/NewsDivs";
 import KidWithLaptopImg from "../../../../public/KidWithLaptop.png";
 import BoyWithLaptopImg from "../../../../public/BoyWithLaptop.png";
 import CatWithLaptopImg from "../../../../public/CatWithLaptop.png";
+import { motion } from "motion/react";
 const News = () => {
   return (
     <div className="text-center mt-[240px] ml-[200px]">
@@ -28,7 +30,7 @@ const News = () => {
             Class, launched less than a year ago by Blackboard co-founder
             Michael Chasen, integrates exclusively...
           </p>
-          <p className="underline font-[Poppins] font-normal text-[20px] text-[#696984] mt-[28px]">
+          <p className="hover:underline cursor-pointer font-[Poppins] font-normal text-[20px] text-[#696984] mt-[28px]">
             Read more
           </p>
         </div>
