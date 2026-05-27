@@ -21,10 +21,20 @@ const Header = () => {
           <motion.li whileHover={{ scale: 1.1 }}>
             <Link href="/">Home</Link>
           </motion.li>
-          <motion.li className="cursor-pointer" whileTap={{ scale: 0.95 }}>
+          <motion.li
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.95 }}
+            onHoverStart={() => console.log("hover started!")}
+            className="cursor-pointer"
+          >
             <Link href="/courses">Courses</Link>
           </motion.li>
-          <motion.li onHoverStart={() => console.log("hover started!")}>
+          <motion.li
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.95 }}
+            onHoverStart={() => console.log("hover started!")}
+            className="cursor-pointer"
+          >
             <Link href="/carrers">Careers</Link>
           </motion.li>
           <motion.li
