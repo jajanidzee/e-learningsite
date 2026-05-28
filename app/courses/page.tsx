@@ -3,6 +3,7 @@ import Header from "../Components/Header/Header";
 import SecondTotcImg from "../../public/SecondTotc.png";
 import Inspiration from "../Components/CourseComponents/Inspiration/Inspiration";
 import ReadBlog from "../Components/CourseComponents/ReadBlog/ReadBlog";
+import RelatedBlog from "../Components/CourseComponents/RelatedBlog/RelatedBlog";
 
 const coursesRouting = () => {
   return (
@@ -10,6 +11,7 @@ const coursesRouting = () => {
       <Header />
       <Inspiration />
       <ReadBlog />
+      <RelatedBlog />
     </div>
   );
 };
