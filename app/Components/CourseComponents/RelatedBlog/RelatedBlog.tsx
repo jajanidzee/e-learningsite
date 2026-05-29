@@ -8,7 +8,7 @@ import RightArrowImg from "../../../../public/RightArrow.svg";
 import Image from "next/image";
 const RelatedBlog = () => {
   return (
-    <div className="bg-[#9dccff73] pl-[120px] pt-[93px] pr-[153.69px] mt-[80px]">
+    <div className="bg-[#9dccff73] pl-[116px] pt-[93px] pr-[132.62px] mt-[80px] pb-[66px]">
       <div className="flex items-center justify-between">
         <p className="font-[Poppins] font-medium text-[30px] text-[#000]">
           Related Blog{" "}

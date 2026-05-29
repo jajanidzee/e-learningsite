@@ -4,6 +4,8 @@ import SecondTotcImg from "../../public/SecondTotc.png";
 import Inspiration from "../Components/CourseComponents/Inspiration/Inspiration";
 import ReadBlog from "../Components/CourseComponents/ReadBlog/ReadBlog";
 import RelatedBlog from "../Components/CourseComponents/RelatedBlog/RelatedBlog";
+import Marketing from "../Components/CourseComponents/Marketing/Marketing";
+import Footer from "../Components/Footer/Footer";
 
 const coursesRouting = () => {
   return (
@@ -12,6 +14,8 @@ const coursesRouting = () => {
       <Inspiration />
       <ReadBlog />
       <RelatedBlog />
+      <Marketing />
+      <Footer />
     </div>
   );
 };
