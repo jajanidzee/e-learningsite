@@ -2,6 +2,7 @@ import React from "react";
 import Header from "../Components/Header/Header";
 import Pricing from "../Components/CarrersComponents/Pricing/Pricing";
 import Coaching from "../Components/CarrersComponents/Coaching/Coaching";
+import Remote from "../Components/CarrersComponents/Remote/Remote";
 
 const carrersRouting = () => {
   return (
@@ -9,6 +10,7 @@ const carrersRouting = () => {
       <Header />
       <Pricing />
       <Coaching />
+      <Remote />
     </div>
   );
 };
