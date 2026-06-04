@@ -1,5 +1,5 @@
 import React from "react";
-import PricingSystem from "../../PricingSystem/PricingSystem";
+import PricingSystem from "../PricingSystem/PricingSystem";
 
 const Pricing = () => {
   return (

@@ -15,7 +15,7 @@ const RemoteDivs = ({ ptext, divclass, mainp }: Props) => {
           ></div>
           <div>
             {" "}
-            <p className="font-[Inter] font-normal text-[18px] text-[#2D3436] ">
+            <p className="font-[Inter] font-bold text-[22px] text-[#2D3436] ">
               {mainp}
             </p>
             <p className="font-[Poppins] font-normal text-[18px] text-[#696984] mt-[15px]">

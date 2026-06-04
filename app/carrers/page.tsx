@@ -3,6 +3,7 @@ import Header from "../Components/Header/Header";
 import Pricing from "../Components/CarrersComponents/Pricing/Pricing";
 import Coaching from "../Components/CarrersComponents/Coaching/Coaching";
 import Remote from "../Components/CarrersComponents/Remote/Remote";
+import Students from "../Components/CarrersComponents/Students/Students";
 
 const carrersRouting = () => {
   return (
@@ -11,6 +12,7 @@ const carrersRouting = () => {
       <Pricing />
       <Coaching />
       <Remote />
+      <Students />
     </div>
   );
 };
