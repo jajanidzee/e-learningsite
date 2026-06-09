@@ -1,6 +1,8 @@
+"use client";
 import React from "react";
 import Image from "next/image";
 import BigLaptopImg from "../../../../public/BigLaptop.png";
+import { motion } from "motion/react";
 const Inspiration = () => {
   return (
     <div className="bg-[#9dccff73] py-[70px] pl-[118px] pr-[163px] flex items-center gap-[176px]">
@@ -18,9 +20,13 @@ const Inspiration = () => {
           eiusmod tempos Lorem ipsum dolor sitamet, <br /> consectetur
           adipiscing elit, sed do eiusmod tempor
         </p>
-        <button className="mt-[25px] bg-[#49BBBD] w-[236px] h-[63px] text-[#FFFFFF] font-[Poppins] text-[16px] rounded-[12px] font-bold">
+        <motion.button
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.95 }}
+          className="mt-[25px] bg-[#49BBBD] w-[236px] h-[63px] text-[#FFFFFF] font-[Poppins] text-[16px] cursor-pointer rounded-[12px] font-bold"
+        >
           Start learning now
-        </button>
+        </motion.button>
       </div>
       <Image src={BigLaptopImg} alt="BigLaptopImg"></Image>
     </div>

@@ -23,7 +23,7 @@ const RemoteDivs = ({ ptext, divclass, mainp }: Props) => {
             </p>
           </div>
         </div>
-        <FaArrowDown />
+        <FaArrowDown className="cursor-pointer" />
       </div>
       <hr className="w-[1681px] h-[1px] bg-[#696984]" />
     </>

@@ -1,6 +1,7 @@
+"use client";
 import React from "react";
 import PricingSystem from "../PricingSystem/PricingSystem";
-
+import { motion } from "motion/react";
 const Pricing = () => {
   return (
     <div className="mt-[60px]">
@@ -10,7 +11,7 @@ const Pricing = () => {
       <div className="flex gap-[30px] mt-[60px] ml-[375px] mt-[77px]">
         <div className="px-[32px] py-[32px] mb-[8px]">
           <p className="font-[Inter] font-bold text-[18px] text-[#49BBBD]">
-            Like a pussy
+            Like a New
           </p>
 
           <p className="text-[48px] text-[#000] font-bold font-[Inter]">
@@ -24,9 +25,13 @@ const Pricing = () => {
             btn=""
           />
           <PricingSystem maindiv="" ptext="Awesome Feather icons pack" btn="" />
-          <button className="mt-[128px] w-[306px] h-[64px] rounded-[20px] border-[1px] border-[#D9D9D9] text-[#49BBBD] text-[18px] font-bold font-[Inter] ">
+          <motion.button
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.95 }}
+            className="mt-[128px] w-[306px] h-[64px] rounded-[20px] border-[1px] cursor-pointer border-[#D9D9D9] text-[#49BBBD] text-[18px] font-bold font-[Inter] "
+          >
             Try for free
-          </button>
+          </motion.button>
         </div>
         <div className="px-[32px] py-[32px]  shadow-[0px_2px_3px_3px_#D9D9D9] rounded-[10px]">
           <div className="flex justify-between w-[320px]">
@@ -66,9 +71,13 @@ const Pricing = () => {
             ptext="Will help to learn Figma"
             btn="bg-[#FDCB6E]"
           />
-          <button className="mt-[16px] w-[306px] h-[64px] rounded-[20px] text-[#fff] bg-[#49BBBD] text-[18px] font-bold font-[Inter] ">
+          <motion.button
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.95 }}
+            className="mt-[16px] w-[306px] h-[64px] rounded-[20px] text-[#fff] bg-[#49BBBD] cursor-pointer text-[18px] font-bold font-[Inter] "
+          >
             Regular license
-          </button>
+          </motion.button>
         </div>
         <div className="px-[32px] py-[32px]">
           {" "}
@@ -99,9 +108,13 @@ const Pricing = () => {
             ptext="Sales-boosting landing pages"
             btn="bg-green-200"
           />
-          <button className="mt-[72px] w-[306px] h-[64px] rounded-[20px] border-[1px] border-[#D9D9D9] text-[#49BBBD] text-[18px] font-bold font-[Inter] ">
+          <motion.button
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.95 }}
+            className="mt-[72px] w-[306px] h-[64px] cursor-pointer rounded-[20px] border-[1px] border-[#D9D9D9] text-[#49BBBD] text-[18px] font-bold font-[Inter] "
+          >
             Extended license
-          </button>
+          </motion.button>
         </div>
       </div>
     </div>

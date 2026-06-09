@@ -14,7 +14,7 @@ const Marketing = () => {
         <p className="font-[Poppins] font-medium text-[30px] text-[#000]">
           Marketing Articles
         </p>
-        <p className="font-[Poppins] font-bold text-[20px] text-[#49BBBD]">
+        <p className="font-[Poppins] font-bold text-[20px] text-[#49BBBD] hover:underline cursor-pointer">
           See all
         </p>
       </div>

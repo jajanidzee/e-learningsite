@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import RelatedBlogDivs from "../RelatedBlogDivs/RelatedBlogDivs";
 import LinaImg from "../../../../public/Lina.png";
@@ -6,6 +7,7 @@ import GroupChatImg from "../../../../public/GroupChat.png";
 import LeftArrowImg from "../../../../public/LeftArrow.svg";
 import RightArrowImg from "../../../../public/RightArrow.svg";
 import Image from "next/image";
+import { motion } from "motion/react";
 const RelatedBlog = () => {
   return (
     <div className="bg-[#9dccff73] pl-[116px] pt-[93px] pr-[132.62px] mt-[80px] pb-[66px]">
@@ -36,12 +38,20 @@ const RelatedBlog = () => {
         />
       </div>
       <div className="flex gap-[20px] justify-end mt-[73px]">
-        <button className="w-[50px] h-[50px] bg-[#49bbbda0] rounded-[4px] text-[#fff] text-[24px] flex items-center justify-center">
+        <motion.button
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.95 }}
+          className="w-[50px] h-[50px] bg-[#49bbbda0] cursor-pointer rounded-[4px] text-[#fff] text-[24px] flex items-center justify-center"
+        >
           <Image src={LeftArrowImg} alt="LeftArrowImg"></Image>
-        </button>
-        <button className="w-[50px] h-[50px] bg-[#49BBBD] rounded-[4px] text-[#fff] text-[24px] flex items-center justify-center">
+        </motion.button>
+        <motion.button
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.95 }}
+          className="w-[50px] h-[50px] bg-[#49BBBD] cursor-pointer rounded-[4px] text-[#fff] text-[24px] flex items-center justify-center"
+        >
           <Image src={RightArrowImg} alt="RightArrowImg"></Image>
-        </button>
+        </motion.button>
       </div>
     </div>
   );

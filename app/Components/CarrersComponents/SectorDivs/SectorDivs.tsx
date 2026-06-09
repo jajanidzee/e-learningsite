@@ -1,5 +1,7 @@
+"use client";
 import React from "react";
 import Image, { StaticImageData } from "next/image";
+import { motion } from "motion/react";
 type Props = {
   imagee: StaticImageData;
   htext: string;
@@ -21,9 +23,13 @@ const SectorDivs = ({ imagee, htext, ptext, btntext }: Props) => {
         {ptext}
       </p>
       <div className="flex  justify-end">
-        <button className="w-[254px] rounded-[12px] bg-[#49BBBD] font-[Poppins] font-medium text-[20px] text-[#fff] pt-[12px] pb-[12px] pl-[47px] pr-[39px] mt-[48px] items-end">
+        <motion.button
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.95 }}
+          className="w-[254px] rounded-[12px] cursor-pointer bg-[#49BBBD] font-[Poppins] font-medium text-[20px] text-[#fff] pt-[12px] pb-[12px] pl-[47px] pr-[39px] mt-[48px] items-end"
+        >
           {btntext}
-        </button>
+        </motion.button>
       </div>
     </div>
   );

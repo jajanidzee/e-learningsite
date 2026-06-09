@@ -1,5 +1,6 @@
+"use client";
 import React from "react";
-
+import { motion } from "motion/react";
 const Coaching = () => {
   return (
     <div className="w-[1682px] rounded-[37px] bg-[#252641] pt-[70px] pb-[83px] px-[212px] text-center mt-[197px] ml-[120px]">
@@ -11,9 +12,13 @@ const Coaching = () => {
         helping students build skills, gain confidence, and achieve academic
         success from anywhere.
       </p>
-      <button className="w-[236px] h-[63px] bg-[#49BBBD] text-[#fff] rounded-[12px] mt-[73px] font-[Poppins] text-[16px] text-bold">
+      <motion.button
+        whileHover={{ scale: 1.1 }}
+        whileTap={{ scale: 0.95 }}
+        className="w-[236px] h-[63px] bg-[#49BBBD] cursor-pointer text-[#fff] rounded-[12px] mt-[73px] font-[Poppins] text-[16px] text-bold"
+      >
         Start learning now
-      </button>
+      </motion.button>
     </div>
   );
 };
