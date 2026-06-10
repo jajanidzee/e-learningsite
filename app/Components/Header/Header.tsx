@@ -4,6 +4,7 @@ import Image from "next/image";
 import TotcImg from "../../../public/Totc.svg";
 import Link from "next/link";
 import { motion } from "motion/react";
+import blogrouting from "@/app/blog/page";
 const Header = () => {
   return (
     <div className="bg-[#49BBBD] px-[120px] py-[30px] flex justify-between">
@@ -43,7 +44,7 @@ const Header = () => {
             whileTap={{ scale: 0.95 }}
             onHoverStart={() => console.log("hover started!")}
           >
-            Blog
+            <Link href="/blog"> Blog</Link>
           </motion.li>
           <motion.li
             className="cursor-pointer"
