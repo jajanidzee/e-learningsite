@@ -4,7 +4,7 @@ import PricingSystem from "../PricingSystem/PricingSystem";
 import { motion } from "motion/react";
 const Pricing = () => {
   return (
-    <div className="mt-[60px]">
+    <div className="mt-[60px] mb-[197px]">
       <h2 className="font-bold font-extrabold text-[#49BBBD] text-[64px] text-center">
         Affordable pricing
       </h2>

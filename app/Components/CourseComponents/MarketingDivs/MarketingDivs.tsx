@@ -24,11 +24,11 @@ const MarketingDivs = ({
   newprice,
 }: Props) => {
   return (
-    <div className="w-[374px] pt-[20px] pb-[34.75px] px-[21px] rounded-[20px]  shadow-[0px_2px_4px_0px_grey]">
+    <div className="w-[374px] pt-[20px] pb-[34.75px] px-[21px] rounded-[20px]  shadow-[0px_2px_4px_0px_grey] bg-[#fff]">
       <Image
         src={mainimagee}
         alt="mainimagee"
-        className="w-[335px] h-[239px]"
+        className="w-[335px] h-[239px] rounded-[20px]"
       ></Image>
       <div className="flex mt-[20px] justify-between">
         <div className="flex gap-[10px] items-center">
@@ -54,7 +54,11 @@ const MarketingDivs = ({
       </p>
       <div className="flex items-center justify-between mt-[17px]">
         <div className="flex gap-[17.78px] items-center">
-          <Image src={rdcimg} alt="rdcimg"></Image>
+          <Image
+            src={rdcimg}
+            alt="rdcimg"
+            className="w-[44px] h-[44px] rounded-[100%]"
+          ></Image>
           <p className="">{rdcname}</p>
         </div>
         <div className="flex gap-[14px] items-center">

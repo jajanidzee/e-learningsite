@@ -19,9 +19,13 @@ const News = () => {
       <div className="mt-[100px] flex gap-[120px]">
         <div className="w-[640px] text-start">
           <Image src={VideoCallImg} alt="VideoCallImg"></Image>
-          <button className="w-[150px] h-[40px] rounded-[80px] bg-[#49BBBD] mt-[40px] text-[#fff] font-[poppins] text-[20px] font-medium">
+          <motion.button
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.95 }}
+            className="w-[150px] h-[40px] rounded-[80px] bg-[#49BBBD] mt-[40px] cursor-pointer text-[#fff] font-[poppins] text-[20px] font-medium"
+          >
             NEWS
-          </button>
+          </motion.button>
           <h4 className="font-[Poppins] font-medium text-[26px] text-[#252641] mt-[20px]">
             Class adds $30 million to its balance sheet for a Zoom-friendly
             edtech solution

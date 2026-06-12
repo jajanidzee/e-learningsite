@@ -3,7 +3,7 @@ import React from "react";
 import { motion } from "motion/react";
 const Coaching = () => {
   return (
-    <div className="w-[1682px] rounded-[37px] bg-[#252641] pt-[70px] pb-[83px] px-[212px] text-center mt-[197px] ml-[120px]">
+    <div className="w-[1682px] rounded-[37px] bg-[#252641] pt-[70px] pb-[83px] px-[212px] text-center  ml-[120px]">
       <h4 className="font-[Poppins] font-semibold text-[36px] text-[#FFFFFF]">
         Online coaching lessons for remote learning.
       </h4>
