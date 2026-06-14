@@ -52,7 +52,7 @@ const Header = () => {
             whileTap={{ scale: 0.95 }}
             onHoverStart={() => console.log("hover started!")}
           >
-            About Us
+            <Link href="/aboutus"> About Us</Link>
           </motion.li>
         </ul>
         <div className="flex gap-[26px]">
