@@ -1,12 +1,18 @@
 import React from "react";
+import RatingBtns from "../RatingBtns/RatingBtns";
 
 const Rating = () => {
   return (
-    <div>
-      <div className="">
-        <div className="flex"></div>
+    <div className="mt-[55px]">
+      <div>
+        <div className="flex gap-[50px]">
+          <RatingBtns btnclass="" btntext="Overview" />
+          <RatingBtns btnclass="" btntext="Overview" />
+          <RatingBtns btnclass="" btntext="Overview" />
+          <RatingBtns btnclass="" btntext="Overview" />
+        </div>
       </div>
-      <div className=""></div>
+      <div></div>
     </div>
   );
 };
