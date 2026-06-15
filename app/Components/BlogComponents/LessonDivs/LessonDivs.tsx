@@ -34,8 +34,8 @@ const LessonDivs = ({
           {nametext}
         </p>
       </div>
-      <div className="w-full h-[8px] bg-[#D9D9D9] mt-[25px]">
-        <div className="h-full w-3/4 bg-[#49BBBD]"></div>
+      <div className="w-full h-[8px] bg-[#D9D9D9] mt-[25px] rounded-[2px] ">
+        <div className="h-full w-3/4 bg-[#49BBBD] rounded-[2px]"></div>
       </div>
       <p className="font-[Poppins] font-semibold text-[14px] text-[#D9D9D9] mt-[12px] text-end">
         {lsntext}
