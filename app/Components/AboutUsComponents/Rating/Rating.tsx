@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import RatingBtns from "../RatingBtns/RatingBtns";
 import SStariImg from "../../../../public/SStar.png";
@@ -18,6 +19,8 @@ import YoutubeImg from "../../../../public/youtube.svg";
 import InstagramImg from "../../../../public/instagram.svg";
 import TelegramImg from "../../../../public/telegram.svg";
 import WhatsappImg from "../../../../public/whatsapp.svg";
+import Link from "next/link";
+import { motion } from "motion/react";
 const Rating = () => {
   return (
     <div className="mt-[55px] pl-[157px]">
@@ -95,9 +98,14 @@ const Rating = () => {
           <p className="font-[Poppins] font-semibold text-[20px] text-[#49BBBD] mt-[42px] text-center">
             11 hour left at this price
           </p>
-          <button className="w-[443px] rounded-[12px] px-[177px] py-[17px] font-[Poppins] font-bold text-[20px] text-[#FFFFFF] bg-[#49BBBD] mt-[42px] ">
-            Buy Now
-          </button>
+          <motion.button
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.95 }}
+            onHoverStart={() => console.log("hover started!")}
+            className="cursor-pointer w-[443px] rounded-[12px] px-[177px] py-[17px] font-[Poppins] font-bold text-[20px] text-[#FFFFFF] bg-[#49BBBD] mt-[42px] "
+          >
+            <Link href="/buynow"> Buy Now</Link>
+          </motion.button>
           <hr className="w-[100%] h-[1px] text-[#D9D9D9] mt-[40px]" />
           <p className="font-[Poppins] font-semibold text-[30px] text-[#000] mt-[35px]">
             This Course included

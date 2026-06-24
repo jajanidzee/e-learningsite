@@ -4,7 +4,7 @@ import Image from "next/image";
 import TotcImg from "../../../public/Totc.svg";
 import Link from "next/link";
 import { motion } from "motion/react";
-import blogrouting from "@/app/blog/page";
+
 const Header = () => {
   return (
     <div className="bg-[#49BBBD] px-[120px] py-[30px] flex justify-between">
@@ -70,7 +70,7 @@ const Header = () => {
             onHoverStart={() => console.log("hover started!")}
             className="cursor-pointer  text-[#FFFFFF] bg-[#00CBB8] font-[Poppins] text-[22px] font-medium  rounded-[80px] py-[14px] px-[49px]"
           >
-            Sign Up
+            <Link href="/signup">Sign Up</Link>
           </motion.button>
         </div>
       </div>

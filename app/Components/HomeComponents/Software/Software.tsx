@@ -1,6 +1,6 @@
 import React from "react";
 import SoftwareDivs from "../SoftwareDivs/SoftwareDivs";
-import FileImg from "../../../../public/File.svg";
+import BigFileImg from "../../../../public/BigFile.svg";
 import BigCalendarImg from "../../../../public/BigCalendar.png";
 import CommunityImg from "../../../../public/Community.png";
 const Software = () => {
@@ -21,7 +21,7 @@ const Software = () => {
         <SoftwareDivs
           h3text="Online Billing, Invoicing, & Contracts"
           ptext="Simple and secure control of your organization’s financial and legal transactions. Send customized invoices and contracts"
-          imagee={FileImg}
+          imagee={BigFileImg}
           imageClass="bg-[#5B72EE]"
           ptextclass=""
           h3textclass=""

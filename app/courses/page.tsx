@@ -9,7 +9,7 @@ import Footer from "../Components/Footer/Footer";
 
 const coursesRouting = () => {
   return (
-    <div className=" w-[1912px] m-auto  ">
+    <div className=" w-[1912px] m-auto">
       <Header />
       <Inspiration />
       <ReadBlog />
