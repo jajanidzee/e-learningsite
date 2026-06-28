@@ -1,4 +1,5 @@
 import React from "react";
+
 type Props = {
   btnclass: any;
   main: any;
@@ -6,10 +7,10 @@ type Props = {
   text: string;
   bio: string;
 };
-const EduDivs = ({ main, btn, text, bio, btnclass }: Props) => {
+const OfferDivs = ({ main, btn, text, bio, btnclass }: Props) => {
   return (
     <div
-      className={`${main} w-[506px] rounded-[20px] pt-[40px] pb-[56px] px-[50px] bg-[url('/Managment.png')] h-[481px] bg-no-repeat`}
+      className={`${main} w-[506px] rounded-[20px] pt-[40px] pb-[56px] px-[50px] bg-[url('/EduTeam.png')] h-[481px] bg-no-repeat`}
     >
       <button
         className={`${btnclass} w-[100px] rounded-[12px] h-[100px] flex justify-center items-center text-[#fff] font-[Poppins] font-bold text-[24px]`}
@@ -26,4 +27,4 @@ const EduDivs = ({ main, btn, text, bio, btnclass }: Props) => {
   );
 };
 
-export default EduDivs;
+export default OfferDivs;

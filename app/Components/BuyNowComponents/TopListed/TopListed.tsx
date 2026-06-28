@@ -1,10 +1,11 @@
 import React from "react";
-import EduDivs from "../EduDivs/EduDivs";
+import EduDivs from "../../AboutUsComponents/EduDivs/EduDivs";
+import OfferDivs from "../OfferDivs/OfferDivs";
 
-const Education = () => {
+const TopListed = () => {
   return (
-    <div className="pl-[173px] pr-[100px] mt-[167px] mb-[205px]">
-      <div className="flex justify-between ">
+    <div className="mt-[158px] ml-[120px] mb-[87px]">
+      <div className="flex items-center justify-between">
         <h4 className="font-[Poppins] font-medium text-[30px] text-[#000]">
           Top Education offers and deals are listed here
         </h4>
@@ -12,31 +13,31 @@ const Education = () => {
           See all
         </p>
       </div>
-      <div className="flex gap-[70px] mt-[64px]">
-        <EduDivs
+      <div className="flex items-center gap-[73.31px] mt-[70px]">
+        <OfferDivs
+          main=""
           btn="50%"
           text="FOR INSTRUCTORS"
           bio="TOTC’s school management software helps traditional and online schools manage scheduling,"
-          main=""
-          btnclass="bg-[#FF0000]"
+          btnclass="bg-[#49BBBD]"
         />
-        <EduDivs
-          btn="50%"
+        <OfferDivs
+          main=""
+          btn="10%"
           text="FOR INSTRUCTORS"
           bio="TOTC’s school management software helps traditional and online schools manage scheduling,"
-          main=""
-          btnclass="bg-[#FF0000]"
+          btnclass="bg-[#49BBBD]"
         />
-        <EduDivs
+        <OfferDivs
+          main=""
           btn="50%"
           text="FOR INSTRUCTORS"
           bio="TOTC’s school management software helps traditional and online schools manage scheduling,"
-          main=""
-          btnclass="bg-[#FF0000]"
+          btnclass="bg-[#49BBBD]"
         />
       </div>
     </div>
   );
 };
 
-export default Education;
+export default TopListed;
