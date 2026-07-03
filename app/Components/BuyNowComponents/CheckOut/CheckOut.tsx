@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import Image from "next/image";
 import PayPalImg from "../../../../public/Paypal.png";
@@ -7,6 +8,7 @@ import MasterCardImg from "../../../../public/MasterCard.png";
 import SummaryDivs from "../SummaryDivs/SummaryDivs";
 import ClassRoomImg from "../../../../public/ClassRoom.png";
 import Subtotal from "../Subtotal/Subtotal";
+import { motion } from "motion/react";
 const CheckOut = () => {
   return (
     <div className="flex mt-[50px] gap-[61px]">
@@ -93,9 +95,14 @@ const CheckOut = () => {
             </label>
           </div>
         </form>
-        <button className="w-[842px] rounded-[12px] bg-[#49BBBD] px-[298px] pt-[14px] pb-[19px] h-[63px] font-[Poppins] text-[26px] text-[#fff] font-normal mt-[50px]">
+        <motion.button
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.95 }}
+          onHoverStart={() => console.log("hover started!")}
+          className="cursor-pointer w-[842px] rounded-[12px] bg-[#49BBBD] px-[298px] pt-[14px] pb-[19px] h-[63px] font-[Poppins] text-[26px] text-[#fff] font-normal mt-[50px]"
+        >
           Confirm Payment
-        </button>
+        </motion.button>
       </div>
       <div className="w-[662px] pt-[30px] pb-[25px] pl-[30px] pr-[36px] rounded-[20px] bg-[#9dccff44] h-[636px]">
         <p className="text-[24px] text-[#252641] font-[Poppins] font-nromal">

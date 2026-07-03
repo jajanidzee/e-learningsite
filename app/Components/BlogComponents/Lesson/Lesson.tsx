@@ -13,7 +13,7 @@ const Lesson = () => {
           Welcome back, ready for your next lesson?
         </h3>
 
-        <p className="text-[#49BBBD] font-[Poppins] font-bold text-[20px]">
+        <p className="text-[#49BBBD] font-[Poppins] font-bold text-[20px] cursor-pointer hover:underline">
           View hisotry
         </p>
       </div>

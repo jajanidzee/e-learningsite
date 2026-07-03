@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import Link from "next/link";
 import Image from "next/image";
 import PlayImg from "../../../../public/Play.svg";
 import TeenageGirlImg from "../../../../public/TeenageGirl.png";
@@ -80,13 +81,16 @@ const OnlineStudying = () => {
             <p className="font-[Nunito_Sans] text-[20px] font-semibold text-[#545567]">
               Today at 12.00 PM
             </p>
-            <motion.button
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.95 }}
-              className=" cursor-pointer py-[12px] px-[48px] bg-[#D8587E] rounded-[80px] font-[Nunito_Sans] text-[20px] font-bold text-[#FFFFFF] mt-[31px] "
-            >
-              Join Now
-            </motion.button>
+            <Link href="/experience">
+              {" "}
+              <motion.button
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.95 }}
+                className=" cursor-pointer py-[12px] px-[48px] bg-[#D8587E] rounded-[80px] font-[Nunito_Sans] text-[20px] font-bold text-[#FFFFFF] mt-[31px] "
+              >
+                Join Now
+              </motion.button>
+            </Link>
           </div>
         </div>
         <Image

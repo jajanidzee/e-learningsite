@@ -18,7 +18,7 @@ const Recommended = () => {
         <h5 className="font-[Poppins] font-bold text-[30px] text-[#000000]">
           Recommended for you
         </h5>
-        <p className="font-[Poppins] font-bold text-[20px] text-[#49BBBD]">
+        <p className="cursor-pointer hover:underline font-[Poppins] font-bold text-[20px] text-[#49BBBD]">
           See all
         </p>
       </div>

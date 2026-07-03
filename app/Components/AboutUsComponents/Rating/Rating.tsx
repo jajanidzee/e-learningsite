@@ -129,12 +129,36 @@ const Rating = () => {
             Share this course
           </h4>
           <div className="mt-[53px] flex items-center gap-[25px]">
-            <Image src={TwitterImg} alt="TwitterImg"></Image>
-            <Image src={FacebookImg} alt="FacebookImg"></Image>
-            <Image src={YoutubeImg} alt="YoutubeImg"></Image>
-            <Image src={InstagramImg} alt="InstagramImg"></Image>
-            <Image src={TelegramImg} alt="TelegramImg"></Image>
-            <Image src={WhatsappImg} alt="TwitterImg"></Image>
+            <Image
+              className="cursor-pointer"
+              src={TwitterImg}
+              alt="TwitterImg"
+            ></Image>
+            <Image
+              className="cursor-pointer"
+              src={FacebookImg}
+              alt="FacebookImg"
+            ></Image>
+            <Image
+              className="cursor-pointer"
+              src={YoutubeImg}
+              alt="YoutubeImg"
+            ></Image>
+            <Image
+              className="cursor-pointer"
+              src={InstagramImg}
+              alt="InstagramImg"
+            ></Image>
+            <Image
+              className="cursor-pointer"
+              src={TelegramImg}
+              alt="TelegramImg"
+            ></Image>
+            <Image
+              className="cursor-pointer"
+              src={WhatsappImg}
+              alt="TwitterImg"
+            ></Image>
           </div>
         </div>
       </div>

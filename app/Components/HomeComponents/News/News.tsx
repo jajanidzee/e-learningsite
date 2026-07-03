@@ -9,7 +9,7 @@ import CatWithLaptopImg from "../../../../public/CatWithLaptop.png";
 import { motion } from "motion/react";
 const News = () => {
   return (
-    <div className="text-center mt-[240px] ml-[200px]">
+    <div className="text-center mt-[240px] ml-[200px] mb-[115px]">
       <h3 className="font-[Nunito_Sans] font-bold text-[#2F327D] text-[36px]">
         Lastest News and Resources
       </h3>

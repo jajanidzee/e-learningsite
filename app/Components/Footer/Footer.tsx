@@ -5,7 +5,7 @@ import Image from "next/image";
 import { motion } from "motion/react";
 const Footer = () => {
   return (
-    <div className="pt-[74px] pb-[40px] flex flex-col items-center justify-center bg-[#252641] mt-[115px]">
+    <div className="pt-[74px] pb-[40px] flex flex-col items-center justify-center bg-[#252641] ">
       <div className="flex items-center w-[388px] justify-between">
         <Image src={TotcImg} alt="TotcImg"></Image>
         <hr className="h-[83px] w-[1px] bg-[#626381]" />

@@ -10,12 +10,12 @@ import Image from "next/image";
 import { motion } from "motion/react";
 const RelatedBlog = () => {
   return (
-    <div className="bg-[#9dccff73] pl-[116px] pt-[93px] pr-[132.62px] mt-[80px] pb-[66px]">
+    <div className="bg-[#9dccff73] pl-[116px] pt-[93px] pr-[132.62px] pb-[66px]">
       <div className="flex items-center justify-between">
         <p className="font-[Poppins] font-medium text-[30px] text-[#000]">
           Related Blog{" "}
         </p>
-        <p className="font-[Poppins] font-bold text-[20px] text-[#49BBBD]">
+        <p className="cursor-pointer hover:underline font-[Poppins] font-bold text-[20px] text-[#49BBBD]">
           See all
         </p>
       </div>

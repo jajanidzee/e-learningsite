@@ -6,7 +6,7 @@ import PHPImg from "../../../../public/PHP.png";
 import JavaScriptImg from "../../../../public/JavaScript.png";
 const ReadBlog = () => {
   return (
-    <div className="pt-[80px] pl-[120px]">
+    <div className="pt-[80px] pl-[120px] mb-[80px]">
       <h4 className="font-[Poppins] font-bold text-[30px] text-[#000]">
         Reading blog list
       </h4>

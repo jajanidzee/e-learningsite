@@ -9,7 +9,7 @@ const TopListed = () => {
         <h4 className="font-[Poppins] font-medium text-[30px] text-[#000]">
           Top Education offers and deals are listed here
         </h4>
-        <p className="font-[Poppins] font-bold text-[20px] text-[#49BBBD]">
+        <p className="cursor-pointer hover:underline font-[Poppins] font-bold text-[20px] text-[#49BBBD]">
           See all
         </p>
       </div>
