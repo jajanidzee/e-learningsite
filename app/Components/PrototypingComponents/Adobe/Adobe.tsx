@@ -44,7 +44,7 @@ const Adobe = () => {
             <input
               type="text"
               className="w-[1276px] h-[60px] py-[16px] px-[21px] border-[1px] border-[#D9D9D9] bg-[#fff] rounded-[10px] font-[Poppins] font-normal text-[24px] placeholder:text-[18px] text-[#9D9B9B]"
-              id="ktoe"
+              id="name"
               placeholder="Adobe XD Auto - Animate : Your Guide to Creating"
             />
           </form>
@@ -60,7 +60,7 @@ const Adobe = () => {
               <input
                 type="date"
                 className="w-[616px] h-[60px] py-[16px] px-[21px] border-[1px] border-[#D9D9D9] bg-[#fff] rounded-[10px] font-[Poppins] font-normal text-[24px] placeholder:text-[18px] text-[#9D9B9B]"
-                id="ktoe"
+                id="name"
                 placeholder="September 24, 2017 07:59 am"
               />{" "}
             </div>
@@ -75,7 +75,7 @@ const Adobe = () => {
               <input
                 type="date"
                 className="w-[616px] h-[60px] py-[16px] px-[21px] border-[1px] border-[#D9D9D9] bg-[#fff] rounded-[10px] font-[Poppins] font-normal text-[24px] placeholder:text-[18px] text-[#9D9B9B]"
-                id="ktoe"
+                id="name"
                 placeholder="September 24, 2017 07:59 am"
               />
             </div>
@@ -91,7 +91,7 @@ const Adobe = () => {
             <input
               type="text"
               className="w-[1276px] h-[60px] py-[16px] px-[21px] border-[1px] border-[#D9D9D9] bg-[#fff] rounded-[10px] font-[Poppins] font-normal text-[24px] placeholder:text-[18px] text-[#9D9B9B]"
-              id="ktoe"
+              id="name"
               placeholder="2118 Thornridge Cir, Syracuse, Connecticut 35624"
             />
           </form>
@@ -108,7 +108,7 @@ const Adobe = () => {
               <input
                 type="text"
                 className="w-[616px] h-[60px] py-[16px] px-[21px] border-[1px] border-[#D9D9D9] bg-[#fff] rounded-[10px] font-[Poppins] font-normal text-[24px] placeholder:text-[18px] text-[#9D9B9B]"
-                id="ktoe"
+                id="name"
                 placeholder="September 24, 2017 07:59 am"
               />{" "}
             </div>
@@ -122,12 +122,28 @@ const Adobe = () => {
               </label>{" "}
               <input
                 type="email"
-                className="w-[616px] h-[60px] py-[16px] px-[21px] border-[1px] border-[#D9D9D9] bg-[#fff] rounded-[10px] font-[Poppins] font-normal text-[24px] placeholder:text-[18px] text-[#9D9B9B]"
-                id="ktoe"
+                className="w-[616px] h-[60px] py-[16px] mb-[20px] px-[21px] border-[1px] border-[#D9D9D9] bg-[#fff] rounded-[10px] font-[Poppins] font-normal text-[24px] placeholder:text-[18px] text-[#9D9B9B]"
+                id="name"
                 placeholder="September 24, 2017 07:59 am "
               />
             </div>
           </form>
+          <label
+            htmlFor=""
+            className="font-[Poppins] font-semibold text-[18px] text-[#5B5B5B] mb-[10px] "
+          >
+            Event Description
+          </label>{" "}
+          <textarea
+            name=""
+            className="w-[1276px] h-[260px] py-[16px] px-[21px] border-[1px] border-[#D9D9D9] text-start bg-[#fff] rounded-[10px] font-[Poppins] font-normal text-[24px] placeholder:text-[18px] text-[#9D9B9B]"
+            id="name"
+          ></textarea>
+          <div className="flex mt-[50px] justify-end">
+            <button className="w-[337px] rounded-[12px] pt-[13px] pb-[19px] px-[105px] \ bg-[#49BBBD] text-[24px] font-[Poppins] font-bold text-[#fff]">
+              Save Now
+            </button>
+          </div>
         </div>
       </div>
     </div>
