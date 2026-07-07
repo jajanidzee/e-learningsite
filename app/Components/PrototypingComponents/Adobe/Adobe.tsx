@@ -1,6 +1,9 @@
+"use client";
 import React from "react";
+import Link from "next/link";
 import MiniClockImg from "../../../../public/MiniClock.svg";
 import Image from "next/image";
+import { motion } from "motion/react";
 const Adobe = () => {
   return (
     <div className="w-[1423px] bg-[#9dccff73]">
@@ -140,9 +143,16 @@ const Adobe = () => {
             id="name"
           ></textarea>
           <div className="flex mt-[50px] justify-end">
-            <button className="w-[337px] rounded-[12px] pt-[13px] pb-[19px] px-[105px] \ bg-[#49BBBD] text-[24px] font-[Poppins] font-bold text-[#fff]">
-              Save Now
-            </button>
+            <Link href="/xd">
+              <motion.button
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.95 }}
+                onHoverStart={() => console.log("hover started!")}
+                className="w-[337px] rounded-[12px] pt-[13px] pb-[19px] px-[105px] cursor-pointer bg-[#49BBBD] text-[24px] font-[Poppins] font-bold text-[#fff]"
+              >
+                Save Now
+              </motion.button>
+            </Link>
           </div>
         </div>
       </div>

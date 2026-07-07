@@ -1,14 +1,14 @@
 import React from "react";
 import Events from "../Components/PrototypingComponents/Events/Events";
-import Adobe from "../Components/PrototypingComponents/Adobe/Adobe";
+import Refer from "../Components/XdComponents/Refer/Refer";
 
-const prototypingrouting = () => {
+const xdrouting = () => {
   return (
     <div className=" w-[1912px] m-auto flex">
       <Events />
-      <Adobe />
+      <Refer />
     </div>
   );
 };
 
-export default prototypingrouting;
+export default xdrouting;
