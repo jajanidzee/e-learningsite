@@ -3,9 +3,10 @@ import React from "react";
 import Link from "next/link";
 import MiniClockImg from "../../../../public/MiniClock.svg";
 import Image from "next/image";
-import { DayPicker } from "react-day-picker";
+import { DayPicker, Footer } from "react-day-picker";
 import "react-day-picker/dist/style.css";
 import { motion } from "motion/react";
+import LiveDivs from "../LiveDivs/LiveDivs";
 const Refer = () => {
   return (
     <div className="w-full bg-[#9dccff73]">
@@ -40,10 +41,22 @@ const Refer = () => {
           and contribute to a thriving community where everyone benefits from
           shared success.
         </p>
-        <div className="pt-[90px] px-[54px] pb-[20px] w-[1137px] bg-[#fff] mt-[50px] flex gap-[40px] items-end ">
+        <div className=" px-[30px] pb-[20px] w-[1000px] bg-[#fff] mt-[50px] flex gap-[40px] pt-[36px] ml-[70px] rounded-[20px] ">
           {" "}
-          <DayPicker mode="single" className="scale-120 h-[416px]" />
-          <hr className="w-[1px] h-[461px] bg-[#D9D9D9]" />
+          <DayPicker mode="single" className="" />
+          <hr className="w-[1px] h-[361px] bg-[#D9D9D9] " />{" "}
+          <div className="">
+            <h5 className="font-[Poppins] font-bold text-[20px] text-[#252641]">
+              Sep 12, Monday
+            </h5>
+            <LiveDivs text="2PM" maindiv="mt-[30px]" />
+            <div className="w-[409px] bg-[#F2A8A3] py-[20px] pl-[30px] font-[Poppins] ml-[40px] font-semibold text-[14px] text-[#EE645B] mt-[6px] rounded-[12px]">
+              Adobe XD Live Class
+            </div>
+            <LiveDivs text="3PM" maindiv="mb-[60px]" />
+            <LiveDivs text="4PM" maindiv="mb-[60px]" />
+            <LiveDivs text="5PM" maindiv="mb-[60px]" />
+          </div>
         </div>
       </div>
     </div>
