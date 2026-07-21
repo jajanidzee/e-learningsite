@@ -4,7 +4,7 @@ import Refer from "../Components/XdComponents/Refer/Refer";
 
 const xdrouting = () => {
   return (
-    <div className=" w-[1912px] m-auto flex">
+    <div className="w-[1912px] m-auto flex">
       <Events />
       <Refer />
     </div>

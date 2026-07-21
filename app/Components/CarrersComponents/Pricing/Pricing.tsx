@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import Link from "next/link";
 import PricingSystem from "../PricingSystem/PricingSystem";
 import { motion } from "motion/react";
 const Pricing = () => {
@@ -71,13 +72,16 @@ const Pricing = () => {
             ptext="Will help to learn Figma"
             btn="bg-[#FDCB6E]"
           />
-          <motion.button
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.95 }}
-            className="mt-[16px] w-[306px] h-[64px] rounded-[20px] text-[#fff] bg-[#49BBBD] cursor-pointer text-[18px] font-bold font-[Inter] "
-          >
-            Regular license
-          </motion.button>
+          <Link href="/supercoins">
+            {" "}
+            <motion.button
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.95 }}
+              className="mt-[16px] w-[306px] h-[64px] rounded-[20px] text-[#fff] bg-[#49BBBD] cursor-pointer text-[18px] font-bold font-[Inter] "
+            >
+              Regular license
+            </motion.button>
+          </Link>
         </div>
         <div className="px-[32px] py-[32px]">
           {" "}
