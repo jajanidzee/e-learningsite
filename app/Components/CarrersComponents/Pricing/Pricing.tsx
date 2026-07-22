@@ -14,7 +14,6 @@ const Pricing = () => {
           <p className="font-[Inter] font-bold text-[18px] text-[#49BBBD]">
             Like a New
           </p>
-
           <p className="text-[48px] text-[#000] font-bold font-[Inter]">
             Free
             <span className="text-[18px] tracking-[3px]"> / forever</span>
@@ -26,13 +25,16 @@ const Pricing = () => {
             btn=""
           />
           <PricingSystem maindiv="" ptext="Awesome Feather icons pack" btn="" />
-          <motion.button
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.95 }}
-            className="mt-[128px] w-[306px] h-[64px] rounded-[20px] border-[1px] cursor-pointer border-[#D9D9D9] text-[#49BBBD] text-[18px] font-bold font-[Inter] "
-          >
-            Try for free
-          </motion.button>
+          <Link href="/archievable">
+            {" "}
+            <motion.button
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.95 }}
+              className="mt-[128px] w-[306px] h-[64px] rounded-[20px] border-[1px] cursor-pointer border-[#D9D9D9] text-[#49BBBD] text-[18px] font-bold font-[Inter] "
+            >
+              Try for free
+            </motion.button>
+          </Link>
         </div>
         <div className="px-[32px] py-[32px]  shadow-[0px_2px_3px_3px_#D9D9D9] rounded-[10px]">
           <div className="flex justify-between w-[320px]">

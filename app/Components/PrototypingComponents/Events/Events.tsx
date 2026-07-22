@@ -11,7 +11,7 @@ const Events = () => {
   return (
     <div className="flex">
       <div className="w-[497px] pt-[26px] pb-[30px] px-[20px]">
-        <Link href="/courses">
+        <Link href="/">
           {" "}
           <motion.button
             whileHover={{ scale: 1.1 }}
