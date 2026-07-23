@@ -3,7 +3,7 @@ import React from "react";
 
 const CourseVideo = () => {
   return (
-    <div className="mt-[50px]">
+    <div className="mt-[50px] mx-[50px]">
       <iframe
         className="w-[1323px] h-[884px]"
         width="560"
