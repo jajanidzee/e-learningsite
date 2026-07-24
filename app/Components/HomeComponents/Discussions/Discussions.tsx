@@ -3,6 +3,7 @@ import React from "react";
 import Image from "next/image";
 import HeadPhoneGirlImg from "../../../../public/HeadPhoneGirl.png";
 import RatingImg from "../../../../public/Rating.svg";
+import Link from "next/link";
 import { motion } from "motion/react";
 const Discussions = () => {
   return (
@@ -69,13 +70,15 @@ const Discussions = () => {
       </div>
       <div className="mt-[280px] flex justify-center">
         {" "}
-        <motion.button
-          whileHover={{ scale: 1.1 }}
-          whileTap={{ scale: 0.95 }}
-          className="cursor-pointer w-[280px] h-[80px] border-[1px] border-[#49BBBD] rounded-[80px] font-[Nunito_Sans] text-[24px] font-normal text-[#49BBBD] flex items-center justify-center "
-        >
-          See more features
-        </motion.button>
+        <Link href="/confrence">
+          <motion.button
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.95 }}
+            className="cursor-pointer w-[280px] h-[80px] border-[1px] border-[#49BBBD] rounded-[80px] font-[Nunito_Sans] text-[24px] font-normal text-[#49BBBD] flex items-center justify-center "
+          >
+            See more features
+          </motion.button>
+        </Link>
       </div>
     </div>
   );
