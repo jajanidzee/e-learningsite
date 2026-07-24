@@ -3,7 +3,7 @@ import SettingsImg from "../../../../public/Settings.svg";
 import Image from "next/image";
 const Meeting = () => {
   return (
-    <div className="w-[1200px] rounded-[26px]  shadow-[0px_5px_10px_0px_grey] py-[35px] pl-[35px] pr-[51px] mt-[50px] flex justify-between">
+    <div className="w-[1200px] rounded-[26px]  shadow-[0px_5px_10px_0px_grey] py-[35px] pl-[35px] pr-[51px]  flex justify-between">
       {" "}
       <div>
         <h5 className="font-[Poppins] font-semibold text-[#252641] text-[30px]">
