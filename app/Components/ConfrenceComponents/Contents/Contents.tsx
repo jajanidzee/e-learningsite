@@ -6,9 +6,10 @@ import LockerImg from "../../../../public/Locker.svg";
 import { FaArrowDown } from "react-icons/fa";
 import { FaArrowUp } from "react-icons/fa";
 import Image from "next/image";
+import ContentDivs from "../ContentDivs/ContentDivs";
 const Contents = () => {
   return (
-    <div className="pt-[40px] pb-[16px] px-[30px] rounded-[15px]  shadow-[0px_5px_10px_0px_grey] w-[498px]">
+    <div className="pt-[40px] pb-[16px] px-[30px] rounded-[15px]  shadow-[0px_5px_10px_0px_grey] w-[498px] bg-[#fff]">
       <h3 className="text-[30px] font-[Poppins] font-semibold text-[#252641]">
         Course Contents
       </h3>
@@ -25,29 +26,12 @@ const Contents = () => {
         <div className="w-[85px] h-[5px] bg-[#9DC9CA]"></div>
         <div className="w-[85px] h-[5px] bg-[#9DC9CA]"></div>
       </div>
-      <div className="w-[437px] rounded-[19px] border-[1px] border-[#D9D9D9] py-[11px] px-[30px] mt-[20px] flex items-center justify-between">
-        <div className="">
-          <h6 className="text-[24px] font-[Poppins] font-semibold text-[#252641]">
-            Get Started
-          </h6>
-          <div className="flex gap-[5px] mt-[5px]">
-            <Image src={MiniClockImg} alt="MiniClockImgs"></Image>
-            <p className="text-[14px] font-[Poppins] font-medium text-[#252641]">
-              1 Hour
-            </p>
-          </div>
-        </div>
-        <div className="flex flex-col items-end justify-end">
-          {" "}
-          <FaArrowDown className="cursor-pointer mb-[15px]" />
-          <div className="flex gap-[6px] items-center">
-            <Image src={GreyBookImg} alt="GreyBookImg"></Image>
-            <p className="text-[14px] font-[Poppins] font-medium text-[#252641]">
-              5 Lessons
-            </p>
-          </div>
-        </div>
-      </div>
+      <ContentDivs
+        maindiv="mt-[20px]"
+        maintext="Get Started"
+        duration="1 Hour"
+        lessons="5 Lessons"
+      />
       <div className="w-[437px] pt-[25px] pb-[14px] px-[30px] border-[1px] border-[#49BBBD] rounded-[19px] mt-[11px]">
         {" "}
         <div className="flex items-center justify-between">
@@ -110,6 +94,24 @@ const Contents = () => {
           </div>
         </div>{" "}
       </div>
+      <ContentDivs
+        maindiv="mt-[11px]"
+        maintext="Using Illstarator"
+        duration="1 Hour"
+        lessons="4 Lessons"
+      />
+      <ContentDivs
+        maindiv="mt-[11px]"
+        maintext="What is Pandas?"
+        duration="12:54"
+        lessons="5 Lessons"
+      />
+      <ContentDivs
+        maindiv="mt-[11px]"
+        maintext="Work with Numpy"
+        duration="59:00"
+        lessons="3 Lessons"
+      />
     </div>
   );
 };

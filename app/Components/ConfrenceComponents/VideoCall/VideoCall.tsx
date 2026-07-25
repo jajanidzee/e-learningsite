@@ -7,6 +7,7 @@ import MicrophoneImg from "../../../../public/Microphone.svg";
 import DeclineImg from "../../../../public/Decline.svg";
 import MonitorImg from "../../../../public/Monitor.svg";
 import LeaveImg from "../../../../public/Leave.svg";
+import Link from "next/link";
 import Image from "next/image";
 import CallDivs from "../CallDivs/CallDivs";
 const VideoCall = () => {
@@ -18,11 +19,22 @@ const VideoCall = () => {
         <Image src={BoyWithGlassesImg} alt="BoyWithGlassesImg"></Image>
       </div>
       <div className="w-[1085px] rounded-[30px] bg-[#E6F2FF] py-[37.36px] px-[283px] flex gap-[30px] absolute bottom-[24px] left-[50px]">
-        <CallDivs imagee={CameraImg} />
-        <CallDivs imagee={MicrophoneImg} />
-        <CallDivs imagee={DeclineImg} />
-        <CallDivs imagee={MonitorImg} />
-        <CallDivs imagee={LeaveImg} />
+        <Link href="https://www.facebook.com/" target="blank">
+          {" "}
+          <CallDivs imagee={CameraImg} />
+        </Link>
+        <Link href="https://www.facebook.com/" target="blank">
+          <CallDivs imagee={MicrophoneImg} />
+        </Link>
+        <Link href="https://www.facebook.com/" target="blank">
+          <CallDivs imagee={DeclineImg} />
+        </Link>
+        <Link href="https://www.facebook.com/" target="blank">
+          <CallDivs imagee={MonitorImg} />
+        </Link>
+        <Link href="https://www.facebook.com/" target="blank">
+          <CallDivs imagee={LeaveImg} />
+        </Link>
       </div>
     </div>
   );
