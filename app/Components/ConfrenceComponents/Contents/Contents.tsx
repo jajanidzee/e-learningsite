@@ -3,7 +3,7 @@ import MiniCalendarImg from "../../../../public/MiniCalendar.svg";
 import MiniClockImg from "../../../../public/MiniClock.svg";
 import GreyBookImg from "../../../../public/GreyBook.svg";
 import LockerImg from "../../../../public/Locker.svg";
-import { FaArrowDown } from "react-icons/fa";
+
 import { FaArrowUp } from "react-icons/fa";
 import Image from "next/image";
 import ContentDivs from "../ContentDivs/ContentDivs";

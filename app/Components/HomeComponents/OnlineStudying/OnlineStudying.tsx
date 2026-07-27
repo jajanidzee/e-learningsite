@@ -22,15 +22,18 @@ const OnlineStudying = () => {
           interactive way
         </p>
         <div className="flex gap-[40px] items-center gap-[40px] mt-[52px]">
-          <motion.button
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.95 }}
-            onHoverStart={() => console.log("hover started!")}
-            className=" cursor-pointer  text-[#FFFFFF] bg-[#00CBB8] font-[Poppins] text-[22px] font-semibold
+          <Link href="/program">
+            {" "}
+            <motion.button
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.95 }}
+              onHoverStart={() => console.log("hover started!")}
+              className=" cursor-pointer  text-[#FFFFFF] bg-[#00CBB8] font-[Poppins] text-[22px] font-semibold
             rounded-[80px] w-[180px] h-[60px]"
-          >
-            Join for free
-          </motion.button>
+            >
+              Join for free
+            </motion.button>
+          </Link>
           <div className="flex items-center gap-8">
             <motion.div
               whileHover={{ scale: 1.1 }}

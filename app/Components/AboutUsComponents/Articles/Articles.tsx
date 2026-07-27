@@ -1,19 +1,13 @@
 "use client";
 import React from "react";
 import MarketingDivs from "../../CourseComponents/MarketingDivs/MarketingDivs";
-import LeftArrowImg from "../../../../public/LeftArrow.svg";
-import RightArrowImg from "../../../../public/RightArrow.svg";
-import DifferentImg from "../../../../public/Different.png";
 import LinaPfpImg from "../../../../public/LinaPfp.png";
 import SolutionsImg from "../../../../public/Solutions.png";
-import FearLessImg from "../../../../public/FearLess.png";
 import BornReadyImg from "../../../../public/BornReady.png";
 import ConcentratedImg from "../../../../public/Concentrated.png";
 import UniversityStudentImg from "../../../../public/UniversityStudent.png";
 import CarlImg from "../../../../public/Carl.jpg";
 import MariaImg from "../../../../public/Maria.jpg";
-import { motion } from "motion/react";
-import Physical from "../../HomeComponents/Physical/Physical";
 
 const Articles = () => {
   return (
