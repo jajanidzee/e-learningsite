@@ -2,6 +2,9 @@ import React from "react";
 import Header from "../Components/Header/Header";
 import Abaliability from "../Components/ProgramComponents/Abaliability/Abaliability";
 import Architect from "../Components/ProgramComponents/Architect/Architect";
+import Platform from "../Components/ProgramComponents/Platform/Platform";
+import Recommended from "../Components/BlogComponents/Recommended/Recommended";
+import ByCreators from "../Components/ProgramComponents/ByCreators/ByCreators";
 
 const programrouting = () => {
   return (
@@ -9,6 +12,9 @@ const programrouting = () => {
       <Header />
       <Abaliability />
       <Architect />
+      <Platform />
+      <Recommended />
+      <ByCreators />
     </div>
   );
 };
