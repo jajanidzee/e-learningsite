@@ -6,7 +6,7 @@ import WayYoutubeImg from "../../../../public/WayYoutube.svg";
 import WayInstagramImg from "../../../../public/WayInstagram.svg";
 import WayTelegramImg from "../../../../public/WayTelegram.svg";
 import WayWhatsAppImg from "../../../../public/WayWhatsapp.svg";
-import { div } from "motion/react-client";
+
 type Props = {
   mainclass: any;
   divclass: any;

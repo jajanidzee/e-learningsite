@@ -5,6 +5,7 @@ import Architect from "../Components/ProgramComponents/Architect/Architect";
 import Platform from "../Components/ProgramComponents/Platform/Platform";
 import Recommended from "../Components/BlogComponents/Recommended/Recommended";
 import ByCreators from "../Components/ProgramComponents/ByCreators/ByCreators";
+import Ellipse from "../Components/ProgramComponents/Ellipse/Ellipse";
 
 const programrouting = () => {
   return (
@@ -15,6 +16,7 @@ const programrouting = () => {
       <Platform />
       <Recommended />
       <ByCreators />
+      <Ellipse />
     </div>
   );
 };
