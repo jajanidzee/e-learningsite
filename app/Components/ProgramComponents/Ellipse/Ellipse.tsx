@@ -1,12 +1,11 @@
+"use client";
 import React from "react";
 import Image from "next/image";
-import WayTwitterImg from "../../../../public/WayTwitter.svg";
-import WayFacebookImg from "../../../../public/WayFacebook.svg";
-import WayInstagramImg from "../../../../public/WayInstagram.svg";
 import MiniAdamImg from "../../../../public/MiniAdam.png";
 import MiniSarahImg from "../../../../public/MiniSarah.png";
 import MiniLianaImg from "../../../../public/MiniLiana.png";
 import MiniJoeImg from "../../../../public/MiniJoe.png";
+import { motion } from "motion/react";
 const Ellipse = () => {
   return (
     <div className="bg-[#9dccff73] pt-[70px] pb-[80px] px-[138px]">
@@ -38,9 +37,27 @@ const Ellipse = () => {
               and achieve long-term success in competitive markets.
             </p>
             <div className="flex gap-[25px] items-center mt-[31px]">
-              <Image src={WayTwitterImg} alt="WayTwitterImg"></Image>
-              <Image src={WayFacebookImg} alt="WayFacebookImg"></Image>
-              <Image src={WayInstagramImg} alt="WayInstagramImg"></Image>
+              <motion.img
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.95 }}
+                src="/WayTwitter.svg"
+                alt="WayTwitterImg"
+                className="cursor-pointer"
+              />
+              <motion.img
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.95 }}
+                src="/WayFacebook.svg"
+                alt="WayFacebookImg"
+                className="cursor-pointer"
+              />
+              <motion.img
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.95 }}
+                src="/WayInstagram.svg"
+                alt="WayInstagramImg"
+                className="cursor-pointer"
+              />
             </div>
           </div>
           <div className="flex flex-col gap-[25px] mt-[48px]">

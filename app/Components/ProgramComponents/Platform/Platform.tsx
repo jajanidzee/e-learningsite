@@ -1,14 +1,9 @@
 "use client";
-import React from "react";
 import Image from "next/image";
 import RatingImg from "../../../../public/Rating.svg";
 import PhoneImg from "../../../../public/Phone.svg";
-import WindowsImg from "../../../../public/Windows.png";
-import DoubleBlocksImg from "../../../../public/DoubleBlocks.png";
-import TeamImg from "../../../../public/Team.png";
 import { motion } from "motion/react";
 import PlatformDivs from "../PlatformDivs/PlatformDivs";
-import Features from "../../HomeComponents/Features/Features";
 
 const Platform = () => {
   return (
@@ -22,7 +17,7 @@ const Platform = () => {
           <PlatformDivs text="Top instructors from around world" />
           <PlatformDivs text="Top courses from your team" />
         </div>
-        <button className="w-[309px] bg-[#49BBBD] py-[16px] px-[39px] mt-[25px] font-[Poppins] text-[24px] font-bold text-[#FFFFFF] rounded-[12px]">
+        <button className="cursor-pointer w-[309px] bg-[#49BBBD] py-[16px] px-[39px] mt-[25px] font-[Poppins] text-[24px] font-bold text-[#FFFFFF] rounded-[12px]">
           Start learning now
         </button>
       </div>

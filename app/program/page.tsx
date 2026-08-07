@@ -6,6 +6,8 @@ import Platform from "../Components/ProgramComponents/Platform/Platform";
 import Recommended from "../Components/BlogComponents/Recommended/Recommended";
 import ByCreators from "../Components/ProgramComponents/ByCreators/ByCreators";
 import Ellipse from "../Components/ProgramComponents/Ellipse/Ellipse";
+import Deals from "../Components/ProgramComponents/Deals/Deals";
+import Footer from "../Components/Footer/Footer";
 
 const programrouting = () => {
   return (
@@ -17,6 +19,8 @@ const programrouting = () => {
       <Recommended />
       <ByCreators />
       <Ellipse />
+      <Deals />
+      <Footer />
     </div>
   );
 };
