@@ -1,5 +1,5 @@
 import React from "react";
-import EduDivs from "../../AboutUsComponents/EduDivs/EduDivs";
+import Link from "next/link";
 import OfferDivs from "../OfferDivs/OfferDivs";
 
 const TopListed = () => {
@@ -9,9 +9,12 @@ const TopListed = () => {
         <h4 className="font-[Poppins] font-medium text-[30px] text-[#000]">
           Top Education offers and deals are listed here
         </h4>
-        <p className="cursor-pointer hover:underline font-[Poppins] font-bold text-[20px] text-[#49BBBD]">
-          See all
-        </p>
+        <Link href="/seeall">
+          {" "}
+          <p className="cursor-pointer hover:underline font-[Poppins] font-bold text-[20px] text-[#49BBBD]">
+            See all
+          </p>
+        </Link>
       </div>
       <div className="flex items-center gap-[73.31px] mt-[70px]">
         <OfferDivs

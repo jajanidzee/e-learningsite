@@ -9,7 +9,7 @@ const Footer = () => {
       <div className="flex items-center w-[388px] justify-between">
         <Image src={TotcImg} alt="TotcImg"></Image>
         <hr className="h-[83px] w-[1px] bg-[#626381]" />
-        <p className="font-[Poppins] font-semibold text-[#fff] text-[22px]  ">
+        <p className="font-[Poppins] font-semibold text-[#fff] text-[22px]">
           Virtual Class <br /> for Zoom
         </p>
       </div>

@@ -6,6 +6,7 @@ import LinaPfpImg from "../../../../public/LinaPfp.png";
 import GroupChatImg from "../../../../public/GroupChat.png";
 import LeftArrowImg from "../../../../public/LeftArrow.svg";
 import RightArrowImg from "../../../../public/RightArrow.svg";
+import Link from "next/link";
 import Image from "next/image";
 import { motion } from "motion/react";
 const RelatedBlog = () => {
@@ -15,9 +16,11 @@ const RelatedBlog = () => {
         <p className="font-[Poppins] font-medium text-[30px] text-[#000]">
           Related Blog{" "}
         </p>
-        <p className="cursor-pointer hover:underline font-[Poppins] font-bold text-[20px] text-[#49BBBD]">
-          See all
-        </p>
+        <Link href="/seeall">
+          <p className="cursor-pointer hover:underline font-[Poppins] font-bold text-[20px] text-[#49BBBD]">
+            See all
+          </p>
+        </Link>
       </div>
       <div className="mt-[41px] flex gap-[99px]">
         <RelatedBlogDivs

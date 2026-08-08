@@ -9,6 +9,7 @@ import SolutionsImg from "../../../../public/Solutions.png";
 import FearLessImg from "../../../../public/FearLess.png";
 import BornReadyImg from "../../../../public/BornReady.png";
 import MariaImg from "../../../../public/Maria.jpg";
+import Link from "next/link";
 import { motion } from "motion/react";
 import Image from "next/image";
 const Recommended = () => {
@@ -18,9 +19,12 @@ const Recommended = () => {
         <h5 className="font-[Poppins] font-bold text-[30px] text-[#000000]">
           Recommended for you
         </h5>
-        <p className="cursor-pointer hover:underline font-[Poppins] font-bold text-[20px] text-[#49BBBD]">
-          See all
-        </p>
+        <Link href="/seeall">
+          {" "}
+          <p className="cursor-pointer hover:underline font-[Poppins] font-bold text-[20px] text-[#49BBBD]">
+            See all
+          </p>
+        </Link>
       </div>
       <div className="flex gap-[50px] mt-[47px]">
         <MarketingDivs

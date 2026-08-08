@@ -6,6 +6,7 @@ import SolutionsImg from "../../../../public/Solutions.png";
 import BornReadyImg from "../../../../public/BornReady.png";
 import ConcentratedImg from "../../../../public/Concentrated.png";
 import UniversityStudentImg from "../../../../public/UniversityStudent.png";
+import Link from "next/link";
 import CarlImg from "../../../../public/Carl.jpg";
 import MariaImg from "../../../../public/Maria.jpg";
 
@@ -16,9 +17,12 @@ const Articles = () => {
         <h4 className="font-[Poppins] font-medium text-[30px] text-[#000]">
           Marketing Articles
         </h4>
-        <p className="cursor-pointer hover:underline font-[Poppins] font-bold text-[20px] text-[#49BBBD]">
-          See all
-        </p>
+        <Link href="/seeall">
+          {" "}
+          <p className="cursor-pointer hover:underline font-[Poppins] font-bold text-[20px] text-[#49BBBD]">
+            See all
+          </p>
+        </Link>
       </div>
       <div className="flex gap-[50px] mt-[47px] mb-[200px]">
         {" "}

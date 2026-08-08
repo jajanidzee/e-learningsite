@@ -4,6 +4,7 @@ import GroupChatImg from "../../../../public/GroupChat.png";
 import LinaPfpImg from "../../../../public/LinaPfp.png";
 import ArchitectImg from "../../../../public/Architect.png";
 import CodingImg from "../../../../public/Coding.png";
+import Link from "next/link";
 import Image from "next/image";
 const Lesson = () => {
   return (
@@ -13,9 +14,11 @@ const Lesson = () => {
           Welcome back, ready for your next lesson?
         </h3>
 
-        <p className="text-[#49BBBD] font-[Poppins] font-bold text-[20px] cursor-pointer hover:underline">
-          View hisotry
-        </p>
+        <Link href="/seeall">
+          <p className="text-[#49BBBD] font-[Poppins] font-bold text-[20px] cursor-pointer hover:underline">
+            View hisotry
+          </p>
+        </Link>
       </div>
       <div className="flex mt-[50px] gap-[50px]">
         <LessonDivs

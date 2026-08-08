@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import EduDivs from "../EduDivs/EduDivs";
 const Education = () => {
   return (
@@ -7,9 +8,12 @@ const Education = () => {
         <h4 className="font-[Poppins] font-medium text-[30px] text-[#000]">
           Top Education offers and deals are listed here
         </h4>
-        <p className="cursor-pointer hover:underline font-[Poppins] font-bold text-[20px] text-[#49BBBD]">
-          See all
-        </p>
+        <Link href="/seeall">
+          {" "}
+          <p className="cursor-pointer hover:underline font-[Poppins] font-bold text-[20px] text-[#49BBBD]">
+            See all
+          </p>
+        </Link>
       </div>
       <div className="flex gap-[70px] mt-[64px]">
         <EduDivs
