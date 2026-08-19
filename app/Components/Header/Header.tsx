@@ -56,14 +56,14 @@ const Header = () => {
           </motion.li>
         </ul>
         <div className="flex gap-[26px]">
-          <motion.button
+       <Link href="/login">   <motion.button
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.95 }}
             onHoverStart={() => console.log("hover started!")}
             className="cursor-pointer bg-[#FFFFFF] text-[#5B5B5B] font-[Poppins] text-[22px] font-medium  rounded-[80px] py-[14px] px-[49px]"
           >
             Login
-          </motion.button>
+          </motion.button></Link>
           <motion.button
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.95 }}

@@ -78,7 +78,7 @@ const CheckOut = () => {
               </label>
               <input
                 type="number"
-                className="w-[403px] h-[60px] rounded-[10px] border-[1px] border-[#D9D9D9] px-[21px] py-[16px] text-[25px] text-[#000] font-[Poppins] font-semibold placeholder:text-[20px] text-[#9D9B9B] font-[Poppins] font-semibold"
+                className="w-[403px] h-[60px] rounded-[10px] border-[1px] border-[#D9D9D9] px-[21px] py-[16px] text-[25px] text-[#000] font-[Poppins] font-semibold placeholder:text-[20px] text-[#9D9B9B] "
                 placeholder="Enter CVC"
               />
             </div>

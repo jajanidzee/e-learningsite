@@ -15,7 +15,7 @@ import Footer from "./Components/Footer/Footer";
 
 export default function Home() {
   return (
-    <div className=" w-[1912px] m-auto ">
+    <div className=" w-[1912px] m-auto  ">
       <Header />
       <OnlineStudying />
       <Software />
