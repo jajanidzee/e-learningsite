@@ -27,3 +27,20 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+[data-scroll-reveal="hidden"] {
+  opacity: 0;
+  transform: translateY(18px);
+}
+
+[data-scroll-reveal="visible"] {
+  opacity: 1;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  [data-scroll-reveal="hidden"],
+  [data-scroll-reveal="visible"] {
+    opacity: 1;
+    transform: none;
+  }
+}

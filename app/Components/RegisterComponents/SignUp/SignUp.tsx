@@ -4,29 +4,30 @@ import LoginImg from "../../../../public/Login.png";
 import Link from "next/link";
 import { motion } from "motion/react";
 import Image from "next/image";
-const Login = () => {
+const SignUp = () => {
   return (
     <div className="py-[38px] pl-[41px] pr-[97px] flex gap-[111px] mt-[30px] ml-[140px] ">
+      {" "}
       <Image src={LoginImg} alt="LoginImg"></Image>
       <div className="w-[500px] flex flex-col items-center ">
         {" "}
         <div className="pt-[107px] text-center">
           <p className="font-[Poppins] font-bold text-[28px]  text-[#000] ">
-            Welcome to Login..!
+            Welcome to Sign Up..!
           </p>
         </div>
         <p className=" mt-[24px] font-[Poppins] font-bold text-[34px]  text-[#000]">
-          Login
+          Register
         </p>
         <p className="font-[Poppins] font-medium text-[24px] mt-[52px] text-[#000]">
-          Logging into an account requires a username and password.
+          Sign Up into an account requires a username and password.
         </p>{" "}
         <form action="" className="flex flex-col mt-[42px] items-start">
           {" "}
           <label
             htmlFor="username"
             className="text-[#000] font-[Poppins] font-medium text-[24px] 
-        "
+            "
           >
             username
           </label>
@@ -38,7 +39,7 @@ const Login = () => {
           <label
             htmlFor="Password"
             className="text-[#000] font-[Poppins] font-medium text-[24px] mt-[30px] 
-        "
+            "
           >
             Password
           </label>
@@ -69,7 +70,7 @@ const Login = () => {
             onHoverStart={() => console.log("hover started!")}
             className="w-[329px] bg-[#49BBBD] cursor-pointer rounded-[33px] mt-[24px] py-[8px] px-[52px] font-[Poppins] font-medium text-[28px]  text-[#fff]"
           >
-            Login
+            Register
           </motion.button>
         </Link>
       </div>
@@ -77,4 +78,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default SignUp;
